@@ -11,43 +11,6 @@
             border:0;
             padding:0;
         }
-        body{
-            font-family: 'Lato', sans-serif;
-            background-color: #dbdbdb;
-            font-size: 16px;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 2%;
-            color: #565859;
-        }
-        .wrapper{
-            background-color: #f6faff;
-            box-shadow: 0 0 10px #666666;
-        }
-        img{
-            max-width: 100%;
-        }
-        .logo{
-            padding: 1% 0;
-            text-align: center;
-        }
-        .logo img{
-            max-width: 220px;
-        }
-        p{
-            line-height: 28px;
-            padding-bottom: 25px;
-        }
-        .social{
-            width: 96%;
-            text-align: center;
-            list-style-type: none;
-            padding: 2%;
-            margin: 20px 0 5px;
-        }
-        .social img{
-            max-width: 40px;
-        }
         @media (max-width: 500px){
             body{
                 padding: 1%;
@@ -59,60 +22,59 @@
         }
         </style>
 </head>
-<body>
-    <div class="wrapper">
+<body style="font-family:lato, sans-serif;background-color:#dbdbdb;font-size:16px;max-width:700px;margin:0 auto;padding:2%;color:#565859;">
+    <div style="background-color:#f6faff;box-shadow:0 0 10px #666666;">
         <!--Logo-->
-        <div class="logo">
-            <img src="img/logo.png" alt="">
+        <div style="padding:1% 0;text-align:center;">
+            <img style="max-width:220px" src="img/logo.png" alt="">
         </div>
         <!--Banner-->
-        <div class="banner">
-            <img src="img/banner.gif" alt="">
+        <div>
+            <img style="max-width:100%" src="img/banner.gif" alt="">
         </div>
-        <div style="padding:20px 0 40px;text-align:center;">
+        <div style="padding:20px 2% 40px 2%;text-align:center;">
             <h1 style="letter-spacing:1px;padding-bottom:15px;">Responsive HTML Email Tutorials</h1>
-            <p>There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web. There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web.</p>
-            <div class="button-holder-1">
-                <a href="#" style="background: #303840; color: #ffffff; text-decoration: none; font-weight:800; padding: 10px 14px;border-radius: 8px;letter-spacing: 2px;">Learn more</a>
+            <p style="line-height:28px;padding-bottom:25px;">There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web. There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web.</p>
+            <div>
+                <a href="#" style="background: #303840; color: #ffffff; text-decoration: none; font-weight:800; padding: 10px 14px;border-radius: 8px;letter-spacing:2px;">Learn more</a>
             </div>
         </div>
         <!--Line-->
-        <div style="clear:both;height:1;background-color:#303840;margin:15px auto 10px;width:98%;"></div>
+        <hr style="clear:both;height:1px;background-color:#303840;margin:15px auto 10px;width:98%;"/>
         <!--Two 1 columns-->
-        <div style="margin:10px 0 26px;float:left;width:46%;padding:5% 2%;">
+        <div class='two-col' style="margin:10px 0 26px;float:left;width:46%;padding:5% 2%;">
             <h2 style="letter-spacing:1px;padding-bottom:15px;">Latest Blog Post</h2>
-            <img src="img/post-1.jpg" alt="">
-            <p>There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web. There are many different email clients to consider when determining the width.</p>
+            <img style="max-width:100%" src="img/post-1.jpg" alt="">
+            <p style="line-height:28px;padding-bottom:25px;">There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web. There are many different email clients to consider when determining the width.</p>
             <div>
                 <a href="#" style="background:#303840;color:#ffffff; text-decoration: none; font-weight:800; padding: 10px 14px;border-radius: 8px;letter-spacing: 2px;">Learn more</a>
             </div>
         </div>
         <!--Two 2 columns-->
-        <div style="margin:10px 0 26px;float:left;width:46%;padding:5% 2%;">
+        <div class="two-col" style="margin:10px 0 26px;float:left;width:46%;padding:5% 2%;">
             <h2 style="letter-spacing:1px;padding-bottom:15px;">Latest Blog Post</h2>
-            <img src="img/post-2.jpg" alt="">
-            <p>There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web. There are many different email clients to consider when determining the width.</p>
+            <img style="max-width:100%" src="img/post-2.jpg" alt="">
+            <p style="line-height:28px;padding-bottom:25px;">There are many different email clients to consider when determining the width of your design but one of the most commonly used is Gmail for the web. There are many different email clients to consider when determining the width.</p>
             <div>
-                <a href="#" style="background: #303840; color: #ffffff; text-decoration: none; font-weight:800; padding: 10px 14px;border-radius: 8px;letter-spacing: 2px;">Learn more</a>
+                <a href="#" style="background:#303840;color:#ffffff;text-decoration:none;font-weight:800;padding:10px 14px;border-radius:8px;letter-spacing:2px;">Learn more</a>
             </div>
         </div>
         <!--Line-->
-        <hr style="clear:both;height:1;background-color:#303840;margin:15px auto 10px;width:98%;"/>
+        <hr style="clear:both;height:1px;background-color:#303840;margin:15px auto 10px;width:98%;"/>
         <!--footer-->
-        <ul class="social">
-            <li style="display:inline;"><a href="#"><img src="img/facebook.png" alt=""></a></li>
-            <li style="display:inline;"><a href="#"><img src="img/twitter.png" alt=""></a></li>
-            <li style="display:inline;"><a href="#"><img src="img/youtube.png" alt=""></a></li>
-            <li style="display:inline;"><a href="#"><img src="img/instagram.png" alt=""></a></li>
-            <li style="display:inline;"><a href="#"><img src="img/linkedin.png" alt=""></a></li>
+        <ul style=" width:96%;text-align:center;list-style-type:none;padding:2%;margin: 20px 0 5px;">
+            <li style="display:inline;"><a href="#"><img style="max-width:40px;" src="img/facebook.png" alt=""></a></li>
+            <li style="display:inline;"><a href="#"><img style="max-width:40px;" src="img/twitter.png" alt=""></a></li>
+            <li style="display:inline;"><a href="#"><img style="max-width:40px;" src="img/youtube.png" alt=""></a></li>
+            <li style="display:inline;"><a href="#"><img style="max-width:40px;" src="img/instagram.png" alt=""></a></li>
+            <li style="display:inline;"><a href="#"><img style="max-width:40px;" src="img/linkedin.png" alt=""></a></li>
         </ul>
-        <p style="padding-bottom:6%;text-align:center;">
+        <p style="padding-bottom:6%;text-align:center;line-height:28px;">
             www.website.com<br>
             1 (800) 555-5555<br>
             2 Town Road - City - State 99999<br>
-            hello@website.com
+            contact@ecosup-campus.com
         </p>
     </div>
-
 </body>
 </html>
